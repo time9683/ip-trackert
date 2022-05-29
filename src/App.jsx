@@ -3,9 +3,9 @@ import useSWR from "swr"
 import { MapContainer, TileLayer, useMap,Marker } from 'react-leaflet'
 import l from 'leaflet'
 import  Arrow from './components/arrow'
-
+import  icon from './icon-location.png'
 import './App.css'
-console.log(import.meta.env)
+
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
 const useTracker= (ip) =>{
@@ -35,7 +35,6 @@ const [ip, setIp] = useState('')
 const { data, error } = useTracker(ip)
 const inputText = useRef()
 
-console.log(error)
 
 
 useEffect(()=>{
@@ -120,7 +119,7 @@ return (<>
       attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
     />
-<Marker icon={l.icon({iconUrl:'/src/icon-location.svg',iconSize:[25,41],	popupAnchor: [1, -34],
+<Marker icon={l.icon({iconUrl:icon,iconSize:[25,41],	popupAnchor: [1, -34],
 	shadowSize: [41, 41],})}  position={[data?.location?.lat,data?.location?.lng]}>
 
 </Marker>

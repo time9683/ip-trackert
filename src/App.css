@@ -31,7 +31,9 @@ border-top-right-radius: 15px;
 border-bottom-right-radius: 15px;
 
 }
-
+.btn_arrow:hover{
+  cursor: pointer;
+}
 
 .form_input{
   display: flex;

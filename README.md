@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [repo solution](https://github.com/time9683/ip-trackert)
+- Live Site URL: [live site](https://ip-trackert.vercel.app/)
 
 ## My process
 
